@@ -1,0 +1,10 @@
+$colorContent: rgb(248, 209, 151);
+$colorGrey: grey;
+$colorBisque: bisque;
+$colorGreen: rgb(165, 214, 165);
+$colorBox: rgb(230, 221, 221);
+
+%grid-center {
+  display: grid;
+  justify-items: center;
+}

@@ -1,0 +1,47 @@
+@import "./template";
+@import "./vars";
+@import "./header";
+@import "./main";
+@import "./aside";
+@import "./footer";
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 90vh;
+  grid-template-rows: 10vh 1fr 20vh;
+  @media screen and (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+  }
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 90vh;
+    grid-template-rows: 10vh 1fr;
+  }
+}
+
+header,
+.footer {
+  background-color: $colorGrey;
+}
+
+main {
+  background-color: $colorBisque;
+}
+
+.aside {
+  background-color: $colorGreen;
+}
+
+.box {
+  background-color: $colorBox;
+}
+
+.content2,
+.content3,
+.content4 {
+  background-color: $colorContent;
+}

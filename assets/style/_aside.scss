@@ -1,0 +1,8 @@
+.aside {
+  padding-top: 20px;
+  @extend %grid-center;
+  font-size: 1.5em;
+  @media screen and (max-width: 320px) {
+    height: 20vh;
+  }
+}
